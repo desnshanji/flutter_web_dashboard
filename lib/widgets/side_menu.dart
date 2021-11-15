@@ -46,6 +46,9 @@ class SideMenu extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 30,
+                ),
               ],
             ),
           Divider(
@@ -67,8 +70,8 @@ class SideMenu extends StatelessWidget {
                         menuController.changeActiveItemTo(itemName);
                         if (ResponsiveWidget.isSmallScreen(context)) {
                           Get.back();
-                          //TODO :: go to item Name Route
                         }
+                        navigationController.navigateTo(itemName);
                       }
                     },
                   ),
