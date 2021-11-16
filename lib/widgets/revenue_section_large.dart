@@ -38,7 +38,7 @@ class RevenueSectionLarge extends StatelessWidget {
                   weight: FontWeight.bold,
                   color: kLightGrey,
                 ),
-                Container(
+                SizedBox(
                   width: 600,
                   height: 200,
                   child: SimpleBarChart.withSampleData(),

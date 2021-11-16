@@ -7,7 +7,7 @@ class OverViewCardsSmallScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double _width = MediaQuery.of(context).size.width;
-    return Container(
+    return SizedBox(
       height: 400,
       child: Column(
         children: [
